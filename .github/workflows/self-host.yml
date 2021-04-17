@@ -12,7 +12,26 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout new content
+        uses: actions/checkout@v2
+
+      - name: upload artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: upload new content
+          path: |
+            /
+            !/LICENSE.md
+            !/README.md
+            !/.github
+    
+      - name: checkout new gh-pages
         run: git clone https://github.com/SiewYan/Skeleton.siewyan.io.git --branch gh-pages --single-branch gh-pages
+
+      - name: downloads artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: download new content to gh-pages
+          path: gh-pages/
              
       - name: setup
         run: |
