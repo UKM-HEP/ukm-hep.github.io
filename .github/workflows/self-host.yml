@@ -22,6 +22,7 @@ jobs:
             !LICENSE.md
             !README.md
             !.github
+            !.git
           
   # Publish built docs to gh-pages branch.
   autohost:
