@@ -16,7 +16,7 @@ jobs:
       - name: upload artifact
         uses: actions/upload-artifact@v2
         with:
-          name: upload new content
+          name: new content
           path: |
             *
             !LICENSE.md
@@ -34,7 +34,7 @@ jobs:
       - name: downloads artifact
         uses: actions/download-artifact@v2
         with:
-          name: download new content to gh-pages
+          name: new content # need to be the same with the name uses on upload
           path: gh-pages/
           
       - name: setup
