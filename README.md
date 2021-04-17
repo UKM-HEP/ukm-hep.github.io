@@ -3,7 +3,7 @@ Skeleton is a simple, responsive boilerplate to kickstart any responsive project
 
 Check out <http://getskeleton.com> for documentation and details.
 
---> https://siewyan.github.io/Skeleton.siewyan.io/
+--> https://siewyan.github.io/shoh.github.io/
 
 ## Getting started
 
