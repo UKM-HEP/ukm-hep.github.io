@@ -19,10 +19,10 @@ jobs:
         with:
           name: upload new content
           path: |
-            /*
-            !/LICENSE.md
-            !/README.md
-            !/.github
+            *
+            !LICENSE.md
+            !README.md
+            !.github
     
       - name: checkout new gh-pages
         run: git clone https://github.com/SiewYan/Skeleton.siewyan.io.git --branch gh-pages --single-branch gh-pages
