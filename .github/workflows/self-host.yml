@@ -19,7 +19,7 @@ jobs:
         with:
           name: upload new content
           path: |
-            /
+            /*
             !/LICENSE.md
             !/README.md
             !/.github
