@@ -4,7 +4,7 @@ name: Self-hositng
 on:
   push:
     branches:
-      - main
+      - master
       
 jobs:          
   # Publish built docs to gh-pages branch.
